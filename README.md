@@ -83,7 +83,9 @@ class Lightning extends Entity
         }
         return $hasUpdate;
     }
-}```
+}
+```
+
 # Task Scheduling
 ```php
 <?php
@@ -105,4 +107,20 @@ class TaskClass extends Task
     {
         // Code
     }
-}```
+}
+```
+# Getting player direction
+```php
+if ($player->getDirection() === 2) {
+    echo "North";
+}
+if ($player->getDirection() === 3) {
+    echo "East";
+}
+if ($player->getDirection() === 0) {
+    echo "South";
+}
+if ($player->getDirection() === 1) {
+    echo "West";
+}
+```
