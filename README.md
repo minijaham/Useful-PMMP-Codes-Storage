@@ -84,3 +84,25 @@ class Lightning extends Entity
         return $hasUpdate;
     }
 }```
+# Task Scheduling
+```php
+<?php
+
+namespace minijaham\MMORPG\Tasks;
+
+use pocketmine\scheduler\Task;
+
+class TaskClass extends Task
+{
+    private $plugin;
+
+    public function __construct(Main $plugin)
+    {
+        $this->plugin = $plugin;
+    }
+
+    public function onRun(int $tick)
+    {
+        // Code
+    }
+}```
