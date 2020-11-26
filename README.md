@@ -124,3 +124,16 @@ if ($player->getDirection() === 1) {
     echo "West";
 }
 ```
+# Animation Packet
+```php
+use pocketmine\network\mcpe\protocol\OnScreenTextureAnimationPacket;
+
+$id = any effect id
+$this->showAnimation($player, $id);
+
+public function showAnimation(Player $player, int $id) {
+    $packet = new OnScreenTextureAnimationPacket();
+    $packet->effectId = $id
+    $player->sendDataPacket($packet);
+}
+```
